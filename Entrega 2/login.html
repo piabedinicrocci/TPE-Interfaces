@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../PARTE 2/css/style2.css">
-   
-    <title>Document</title>
+    <link rel="stylesheet" href="css/autenticacion.css">
+    <link rel="shortcut icon" href="img/icon-logo-pink.svg" type="image/x-icon">
+    <title>Login</title>
 </head>
 <body>
+    <div class="contenedor-autenticacion">
+        
+        <form class="form-autenticacion">
+            <h1>Iniciar Sesión</h1>
 
-
-<div class="contenedor-registrarse">
-    
-    <form class="form-registrarse">
-    <h1>Iniciar Sesión</h1>
-    <label>Usuario </label>
-    <input type="text" placeholder=" Usuario">
-    <label>Contraseña </label>
-    <input type="password" placeholder=" Contraseña">
- 
-    <h4>¿Has olvidado tu contraseña?</h4>
-    <button type="button">Registrarse</button>
-    <button type="button">Ya estoy registrado</button>
-</form>
-</div>  
- 
-  
+            <label>Correo electrónico </label>
+            <input type="text" placeholder="  Correo electrónico">
+            
+            <label>Contraseña </label>
+            <input type="password" placeholder="  Contraseña">
+        
+            <p class="forgot-pass">¿Has olvidado tu contraseña?</p>
+            <a href="index.html">
+                <button type="button">Iniciar Sesión</button>
+            </a>
+            <p>o iniciar sesión con</p>
+            <button class="google" type="button">Iniciar Sesión con Google</button>
+            <button class="facebook" type="button">Conectarse con Facebook</button>
+        </form>
+    </div>  
 </body>
 </html>

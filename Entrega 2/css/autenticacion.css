@@ -1,0 +1,77 @@
+/*FORM REGISTRARSE*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+body{
+    background-image: url("../img/fondoRegistrar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor-autenticacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#1F1F1F;
+    height: 90%;
+    width: 510px;
+    padding: 100px 0px;
+    margin: 40px 0px;
+}
+
+#registro {
+    padding: 30px 0px;
+}
+
+.form-autenticacion{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+} 
+
+input, button{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #FA1B5E;
+    color:white;
+}
+
+.forgot-pass {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+p:not(.forgot-pass) {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.google {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.facebook {
+    background-color: #3566A5;
+}
