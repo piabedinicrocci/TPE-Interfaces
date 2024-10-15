@@ -255,3 +255,289 @@ li {
     width: 35px;
     margin-left: 10px;
 }
+
+/* HOME */
+.container {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  
+  .carrousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+  }
+  
+  .carrousel-juegos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px; /* Espaciado mínimo entre las cards */
+    padding: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #FA1B5E #3547AD; /* Color del thumb (adentro) y track (fondo) */
+    overflow-x: auto;
+    cursor: grab; /* Cambia el cursor por defecto a 'grab' */
+  }
+  
+  .card {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    border: 4px solid #FA1B5E;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacia el contenido */
+    align-items: center;
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+    box-sizing: border-box;
+}
+
+/* Asegura altura mínima para el título */
+.card-title {
+    margin-top: 75%;
+    font-size: 20px;
+    text-align: center;
+    min-height: 40px; /* Asegura que el título ocupe el mismo espacio siempre */
+}
+
+/* Botones alineados al final de cada card */
+.card-body .btn,
+.card-body .add-to-cart {
+    margin-top: auto; /* Empuja el botón hacia el final del contenedor */
+    align-self: center; /* Centra el botón horizontalmente */
+}
+
+/* Mantener tamaño fijo para el botón 'Jugar' */
+.card-body .btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+  
+  .card-price {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #FA1B5E; /* Color de fondo inicial */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 2px 16px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen superior */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: "¡Jugá ahora!"; /* Nuevo texto que se mostrará al hacer hover */
+    position: absolute; /* Posicionamiento absoluto */
+    margin: 0 auto;
+    top: 0; /* Parte superior */
+    left: 0; /* Parte izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    color: white; /* Color del texto */
+    transform: translateY(100%); /* Mueve el nuevo texto fuera de la vista */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+.btn:hover::after {
+    transform: translateY(0); /* Mueve el nuevo texto a su lugar */
+    top: 9px;
+}
+
+.btn:hover {
+    background-color: #FE5085; /* Cambia el color de fondo al hacer hover */
+    color: transparent; /* Hace que el texto original sea transparente */
+}
+  
+.card:hover {
+    transform: scale(1.05); /* Animación al hacer hover */
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #FA1B5E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Evita el subrayado del enlace */
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Efecto hover para ambos botones */
+.btn-primary:hover {
+    background-color: #FE5085;
+    color: transparent; /* Hace que el texto se vuelva transparente */
+}
+
+.btn-primary::after {
+    content: "¡Jugá ahora!";
+    margin-top: 8px;
+    position: absolute;
+    top: -100%;   /* Inicialmente fuera de vista (por encima del botón) */
+    left: 50%;  
+    transform: translate(-50%, 0);  /* Ajusta para centrar exactamente */
+    width: 100%;   
+    height: 100%;  
+    text-align: center;   
+    color: white;
+    transition: transform 0.3s ease, top 0.3s ease;   /* Efecto de movimiento suave */
+}
+
+/* Movimiento del texto al hacer hover */
+.btn-primary:hover::after {
+    top: 50%;  /* Desliza el texto al centro del botón */
+    transform: translate(-50%, -50%);  /* Centra el texto en ambos ejes */
+}
+
+
+/* Flechas del carrousel */
+/* .carrousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+/* .titulos {
+    margin-top: 30px;
+} */
+
+.add-to-cart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Forma circular por defecto */
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px; /* Centrado vertical */
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease; /* Transición suave */
+    overflow: hidden; /* Oculta contenido adicional */
+}
+
+/* Estilo cuando se hace hover: el botón se ensancha */
+.add-to-cart:hover {
+    width: 140px; /* Se ensancha */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 14px; /* Ajusta el tamaño de letra */
+}
+
+/* Texto inicial: solo el símbolo "+" */
+.add-to-cart::before {
+    content: "+"; /* Símbolo inicial */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Transición suave */
+    opacity: 1; /* Visible inicialmente */
+}
+
+/* Oculta el símbolo "+" al hacer hover */
+.add-to-cart:hover::before {
+    opacity: 0; /* Desaparece */
+}
+
+/* Texto "Agregar al carrito" que aparece al hacer hover */
+.add-to-cart::after {
+    content: "Agregar al carrito"; /* Nuevo texto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Tamaño de letra más pequeño */
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+/* Muestra el texto "Agregar al carrito" al hacer hover */
+.add-to-cart:hover::after {
+    opacity: 1; /* Aparece */
+}
+
+
+  
+  
