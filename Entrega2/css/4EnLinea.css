@@ -1,0 +1,195 @@
+/* 4 EN LINEA */
+.contenedor-4Enlinea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fichas{
+    width: 15%;
+    margin: 110px 0px 0px 30px;
+}
+
+.tablero{
+    width: 35%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.tablero img:first-child {
+    width: 100%;
+    height: auto;
+}
+
+.tablero img:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: auto;
+}
+
+.informacion {
+    width: 30%;
+    margin: 50px 80px 10px 120px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.informacion h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-top: 2px solid white;
+    overflow: hidden;
+}
+
+.carrusel-img {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carrusel {
+    transition: 0.3s ease all;
+    margin-right: 15px;
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+}
+
+.carrusel:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.carrusel img {
+    vertical-align: top;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carrusel-img::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carrusel-img::-webkit-scrollbar-thumb {
+    background-color: #FA1B5E; /* Color de la scrollbar */
+    border-radius: 4px;
+}
+
+.carrusel-img::-webkit-scrollbar-track {
+    background-color: #3547AD; /* Fondo del track de la scrollbar */
+}
+
+.btn-izq, .btn-der {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.btn-der{
+    right: 0;
+}
+
+.btn-izq{
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.btn-der,.btn-izq{
+    position: absolute;
+}
+
+.consejo {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.consejo ul li {
+    list-style-type: disc;
+    margin-left: 50px;
+    padding: 3px 0 0 5px;
+}
+
+.consejo p {
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.comentarios, .comentario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.comentarios {
+    margin-right: 60px;
+}
+
+.enviar{
+    align-content: center;
+    padding-left: 30px;
+}
+
+.icono-usuario{
+    text-align: center;
+    padding: 20px;
+}
+
+.mensaje, .input-comentario input{
+    background-color: white;
+    width: 1090px;
+    height: 100px;
+    border-radius: 8px;
+    align-items: flex-start;
+    color: black;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.input-comentario input::placeholder {
+    color: black;
+    font-size: 16px;
+    font-family: Century Gothic;
+    padding-left: 15px;
+}
+
+.mensaje p{
+    color: black;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.contenedor-mensaje h2, .contenedor-comentarios h2 {
+    margin-bottom: 40px;
+}
+
+.contenedor-comentarios,.contenedor-mensaje,.consejo,.contenedor-imagenes{
+    margin-left: 30px;
+}
+
+.contenedor-mensaje,.contenedor-imagenes{
+    border-top: 2px solid white;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.consejo h2,.contenedor-imagenes h2,.contenedor-mensaje h2,.contenedor-comentarios h2{
+    font-size: 40px;
+}
+
+.consejo h2 {
+    margin-bottom: 20px;
+}

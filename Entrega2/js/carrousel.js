@@ -29,8 +29,4 @@ carousels.forEach(carousel => {
         const walk = (x - startX) * 1;
         carousel.scrollLeft = scrollLeft - walk;
     });
-
-
-
-
 });
