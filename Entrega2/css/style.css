@@ -14,7 +14,6 @@
 
 /*---------PRELOADER----------*/
 
-
 .contenedor-carga {
     height: 100%;
     width: 100%;
@@ -80,6 +79,10 @@ button {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+}
+
+#menu-categorias-id {
+    z-index: 15;
 }
 
 .logo img {
@@ -153,6 +156,7 @@ button {
 
 .menu-categorias ul li {
     margin-bottom: 10px;
+    padding: 8px;
 }
 
 .menu-categorias ul li a {
@@ -199,6 +203,7 @@ button {
 
 #menu-usuario-id li {
     margin-bottom: 10px;
+    padding: 8px;
 }
 
 #menu-usuario-id li:last-child {
