@@ -30,7 +30,6 @@ carousels.forEach(carousel => {
         carousel.scrollLeft = scrollLeft - walk;
     });
 
-    let file = document.querySelector(.)
 
 
 
