@@ -90,6 +90,10 @@ p:not(.forgot-pass) {
     transition-duration: 0.3s;
 }
 
+#btn_registrado:hover {
+    background-color: #FE5085;
+}
+
 .hvr-rectangle-out:before {
     content: "";
     position: absolute;
