@@ -44,13 +44,13 @@
 }
 
 .contenedor-carga .porcentaje {
-position: absolute;
-top: 50%; left: 50%;
-font-size: 45px;
-font-weight: 700;
-color: #FA1B5E;
-z-index: 2;
-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%; left: 50%;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FA1B5E;
+    z-index: 2;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes spin {
@@ -302,6 +302,47 @@ footer li {
 .portada button img {
     width: 35px;
     margin-left: 10px;
+}
+
+/* Hover boton jugar */
+@-webkit-keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 /* HOME */
