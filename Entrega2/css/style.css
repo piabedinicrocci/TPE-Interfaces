@@ -121,31 +121,30 @@ button {
     cursor: pointer;
 }
 
-.menu-toggle {
+.categories-menu-toggle {
     position: relative;
 }
 
-.menu-toggle img {
+.categories-menu-toggle img {
     cursor: pointer;
 }
 
-.menu-categorias {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: #3B4E98;
-    display: none;
-    text-align: center;
-}
-
 #menu-categorias-id {
+    position: absolute;
+    background-color: #3B4E98;
+    display: block;
+    text-align: center;
     top: 64px;
+    left: 0;
+    max-height: 0; /* Altura inicial cero */
+    overflow: hidden; /* Oculta el contenido si excede la altura */
+    transition: max-height 0.5s ease-in-out; /* Transición suave */
 }
 
 /* Mostrar menú categorías al hacer clic en el botón */
-.menu-toggle:focus + #menu-categorias-id,
-.menu-toggle:focus-within + #menu-categorias-id {
-    display: block; /* Mostrar menú al recibir el foco */
+.categories-menu-toggle:focus + #menu-categorias-id,
+.categories-menu-toggle:focus-within + #menu-categorias-id {
+    max-height: 400px;
 }
 
 .menu-categorias ul {
@@ -182,7 +181,7 @@ button {
 }
 
 #menu-usuario-id {
-    display: none; 
+    display: block; 
     position: absolute;
     top: 54px;
     right: 0;
@@ -190,6 +189,9 @@ button {
     width: 170px;
     text-align: center;
     transform: translateX(11%);
+    max-height: 0; /* Altura inicial cero */
+    overflow: hidden; /* Oculta el contenido si excede la altura */
+    transition: max-height 0.5s ease-in-out; /* Transición suave */
 }
 
 .menu-usuario li:hover {
@@ -198,7 +200,7 @@ button {
 
 /* Mostrar menú de usuario al hacer clic en el botón */
 .menu-usuario:focus-within #menu-usuario-id {
-    display: block; /* Mostrar menú al recibir el foco en cualquier hijo */
+    max-height: 300px; /* Ajusta según el tamaño del contenido */
 }
 
 #menu-usuario-id ul {
@@ -644,24 +646,24 @@ footer li {
         display: none;
     }
 
-    .menu-categorias {
-        top: 45px;
+    #menu-categorias-id {
+        top: 54px;
         width: 100%;
         left: 0;
-        padding: 10px 0;
+        padding: 0;
     }
 
     .menu-categorias ul li {
         font-size: 12px;
-        padding: 5px;
-    }
-
-    .menu-usuario {
-        padding: 10px;
+        padding: 9px;
     }
 
     #menu-usuario-id {
-        top: 60px;
+        top: 49px;
+    }
+
+    .menu-usuario ul li {
+        font-size: 12px;
     }
 
     .portada {
