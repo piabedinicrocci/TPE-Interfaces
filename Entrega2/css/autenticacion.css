@@ -60,11 +60,16 @@ button{
 .forgot-pass {
     font-size: 11px;
     margin-bottom: 10px;
+    cursor: pointer
 }
 
 p:not(.forgot-pass) {
     text-align: center;
     margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
 }
 
 .google {
