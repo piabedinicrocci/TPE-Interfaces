@@ -31,9 +31,21 @@
             <label for="password">Repetir Contraseña *</label>
             <input type="password" placeholder=" Repetir Contraseña">
             
-            captcha falta aca
+            <!-- CAPTCHA -->
+            <div class="captcha">
+                <div class="contenedor_izq"> 
+                    <div>
+                        <input type="checkbox" class="checkbox">
+                    </div>
+                    <p id="txt-robot">No soy un robot</p>
+                </div>
+                <div class="contenedor_der">
+                    <img src="img/captcha.svg" alt="" srcset="">
+                    <p>Privacidad - Condiciones</p>
+                </div>  
+            </div>
 
-            <button type="button" class="hvr-rectangle-out">Registrarse</button>
+            <button type="button" class="hvr-rectangle-out" id="btn_registrarse">Registrarse</button>
             <a href="login.html">
                 <button type="button" id="btn_registrado">Ya estoy registrado</button>
             </a>
