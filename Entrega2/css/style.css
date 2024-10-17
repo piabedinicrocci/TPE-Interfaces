@@ -11,7 +11,6 @@
     vertical-align: baseline;
 }
 
-
 /*---------PRELOADER----------*/
 
 .contenedor-carga {
@@ -118,7 +117,7 @@ button {
 }
 
 .user-info img {
-    height: 30px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -140,7 +139,7 @@ button {
 }
 
 #menu-categorias-id {
-    top: 65px;
+    top: 64px;
 }
 
 /* Mostrar menú categorías al hacer clic en el botón */
@@ -185,7 +184,7 @@ button {
 #menu-usuario-id {
     display: none; 
     position: absolute;
-    top: 50px;
+    top: 54px;
     right: 0;
     background-color: #3B4E98;
     width: 170px;
