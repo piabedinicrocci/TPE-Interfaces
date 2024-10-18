@@ -182,6 +182,7 @@ button {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
 .login-btn {
     display: flex;
     align-items: center;
@@ -201,7 +202,6 @@ button {
     margin-right: 10px;
 }
 
-/* Estilo Google */
 .login-btn.google {
     background-color: white;
     color: #555;
@@ -212,7 +212,6 @@ button {
     transform: scale(1.05);
 }
 
-/* Estilo Facebook */
 .login-btn.facebook {
     background-color: #3B5998;
     color: white;

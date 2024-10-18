@@ -91,13 +91,13 @@ button {
 
 .search-bar {
     display: flex;
-    align-items: center; /* Centrar verticalmente */
-    background-color: white; /* Fondo blanco */
-    border-radius: 30px; /* Bordes redondeados */
-    width: 300px; /* Ajusta el ancho de la barra de búsqueda */
-    padding: 5px 15px; /* Espaciado interno */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 0 auto; /* Centrar horizontalmente en el contenedor padre */
+    align-items: center; 
+    background-color: white;
+    border-radius: 30px;
+    width: 300px; 
+    padding: 5px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto;
 }
 .search-bar img{
     width: 24px;
@@ -110,10 +110,10 @@ button {
     flex-grow: 1; /* Permitir que el input crezca ocupando el espacio disponible */
     border: none;
     outline: none;
-    border-radius: 30px; /* Bordes redondeados */
-    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 30px;
+    padding: 5px 10px;
     font-size: 16px;
-    color: #333; /* Color del texto */
+    color: #333;
 }
 
 .search-icon-container {
@@ -158,9 +158,9 @@ button {
     text-align: center;
     top: 64px;
     left: 0;
-    max-height: 0; /* Altura inicial cero */
-    overflow: hidden; /* Oculta el contenido si excede la altura */
-    transition: max-height 0.5s ease-in-out; /* Transición suave */
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out; 
 }
 
 /* Mostrar menú categorías al hacer clic en el botón */
@@ -217,9 +217,9 @@ button {
     width: 170px;
     text-align: center;
     transform: translateX(11%);
-    max-height: 0; /* Altura inicial cero */
+    max-height: 0;
     overflow: hidden; /* Oculta el contenido si excede la altura */
-    transition: max-height 0.5s ease-in-out; /* Transición suave */
+    transition: max-height 0.5s ease-in-out;
 }
 
 .menu-usuario li:hover {
@@ -418,8 +418,8 @@ footer li {
     overflow: hidden;
     border-radius: 10px;
     border: 4px solid #FA1B5E;
-    scroll-snap-align: center; /* Cada card se centrará al hacer scroll */
-    transition: transform 0.5s ease-in-out; /* Agregamos transición */
+    scroll-snap-align: center;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Aplicar la distorsión mientras se hace scroll */
@@ -431,7 +431,6 @@ footer li {
     transform: skew(-2deg, -2deg); /* Aplicar distorsión al hacer scroll (hover simula el scroll) */
 }
 
-/* Aumentar opacidad y cambiar el texto del botón en hover */
 .card:hover {
     opacity: 1; /* Aumentar opacidad al hacer hover */
     transform: skew(0deg, 0deg); /* Quitar distorsión al hover */
@@ -514,83 +513,9 @@ footer li {
 .card-price3 {
     margin-bottom: 30px;
 }
-  
-/* .btn {
-    background-color: #FA1B5E;
-    color: white;
-    border: none;
-    padding: 2px 16px;
-    margin-bottom: 10px;
-    cursor: pointer; 
-    border-radius: 5px;
-    /* transition: background-color 0.3s ease;
-    width: 100px;
-    position: relative;
-    overflow: hidden;
-} */
 
-/* .btn::after {
-    content: "¡Jugá ahora!";
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.btn:hover::after {
-    transform: translateY(0);
-    top: 9px;
-} */
-
-/* .btn:hover {
-    background-color: #FE5085;
-    color: transparent;
-} */
-  
-.card:hover {
+/* .card:hover {
     transform: scale(1.05);
-}
-
-/* .btn-primary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 40px;
-    font-size: 14px;
-    border-radius: 20px;
-    background-color: #FA1B5E;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    overflow: hidden;
-    position: relative;
-} */
-
-/* .btn-primary:hover {
-    background-color: #FE5085;
-    color: transparent;
-}
-
-.btn-primary::after {
-    content: "¡Jugá ahora!";
-    margin-top: 8px;
-    position: absolute;
-    top: -100%; 
-    left: 50%;  
-    transform: translate(-50%, 0);
-    width: 100%;   
-    height: 100%;  
-    text-align: center;   
-    color: white;
-    transition: transform 0.3s ease, top 0.3s ease;
 } */
 
 .btn-primary {
