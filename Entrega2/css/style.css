@@ -189,7 +189,7 @@ button {
     width: 170px;
     text-align: center;
     transform: translateX(11%);
-    max-height: 0; /* Altura inicial cero */
+    max-height: 0;
     overflow: hidden; /* Oculta el contenido si excede la altura */
     transition: max-height 0.5s ease-in-out; /* Transición suave */
 }
@@ -469,7 +469,7 @@ footer li {
     margin-bottom: 30px;
 }
   
-.btn {
+/* .btn {
     background-color: #FA1B5E;
     color: white;
     border: none;
@@ -477,13 +477,13 @@ footer li {
     margin-bottom: 10px;
     cursor: pointer; 
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease;
     width: 100px;
     position: relative;
     overflow: hidden;
-}
+} */
 
-.btn::after {
+/* .btn::after {
     content: "¡Jugá ahora!";
     position: absolute;
     margin: 0 auto;
@@ -499,18 +499,18 @@ footer li {
 .btn:hover::after {
     transform: translateY(0);
     top: 9px;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
     background-color: #FE5085;
     color: transparent;
-}
+} */
   
 .card:hover {
     transform: scale(1.05);
 }
 
-.btn-primary {
+/* .btn-primary {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -526,9 +526,9 @@ footer li {
     transition: background-color 0.3s ease;
     overflow: hidden;
     position: relative;
-}
+} */
 
-.btn-primary:hover {
+/* .btn-primary:hover {
     background-color: #FE5085;
     color: transparent;
 }
@@ -545,7 +545,53 @@ footer li {
     text-align: center;   
     color: white;
     transition: transform 0.3s ease, top 0.3s ease;
+} */
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #FA1B5E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
 }
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-primary:hover::before {
+    top: -30%;
+    left: -30%;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d2174b;
+}
+
+
+
 
 .btn-primary2::after, .btn-primary3::after {
     margin-top: 10px;
