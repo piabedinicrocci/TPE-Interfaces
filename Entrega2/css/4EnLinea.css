@@ -247,7 +247,6 @@
     width: 150px;
     height: 423px;
     align-content: center;
-    
 }
 
 .jugador1,.jugador2,.control{
@@ -263,10 +262,11 @@
 
 .breadcrumbs{
     display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-left: 30px;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 30px;
 }
+
 .breadcrumbs img{
     width: 10px;
     margin-left: 10px;

@@ -99,6 +99,7 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     margin: 0 auto;
 }
+
 .search-bar img{
     width: 24px;
     height: 24px;
@@ -121,8 +122,6 @@ button {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .menu-usuario {
     position: relative;
