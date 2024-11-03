@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255.32 255.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="OBJECT">
+    <g>
+      <circle class="cls-1" cx="127.66" cy="127.66" r="127.66"/>
+      <image width="680" height="681" transform="translate(32.51 37.84) scale(.29)" xlink:href="../duende verde.png"/>
+    </g>
+  </g>
+</svg>
