@@ -98,13 +98,28 @@
                 </div>
             </div>
         </div>
-        <canvas></canvas>
-        <div class="tablero">
+
+        <!-- TABLERO DE ANTES -->
+        <!-- <div class="tablero">
             <img src="img/4 en linea.svg" alt="">
             <div class="btn-play" id="hvr-bounce-in">
                 <img  class="play" src="./img/jugar1.svg" alt="">
             </div>
+        </div> -->
+
+        <div class="juegoEnEjecucion">
+            <div id="caratula">
+                <div>
+                    <h2>4 en linea</h2>
+                    <h3 id="temporizadorJuego" class="ocultar"></h3>
+                    <h3 id="reiniciar" class="ocultar">Reiniciar</h3>
+                </div>
+                <div id="div-inicio"></div>
+                <canvas class="canvas" id="canvas" width="1000" height="500"></canvas>
+                <button class="btn-primario" id="empezar-jugar-ejecucion" >Jugar</button>
+            </div>
         </div>
+
         <div class="informacion">
             <h2>¿Cómo jugar al 4 en línea de Spider-Man vs Venom?</h2>
             <p>Los jugadores escogen las fichas rojas de Spiderman o negras de Venom y las colocan en la rejilla, comenzando por el centro o el borde, e intentan alinear 4 en horizontal, vertical o diagonal. Utiliza la estrategia para bloquear a tu adversario mientras intentas ser el primero en colocar 4 en línea para ganar.</p>
@@ -243,6 +258,12 @@
     </footer>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/btnEmpezarJuego.js"></script>
+    <script src="./js/Figure.js"></script>
+    <script src="./js/Ficha.js"></script>
+    <script src="./js/Tablero.js"></script>
+    <script src="./js/Casilla.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
