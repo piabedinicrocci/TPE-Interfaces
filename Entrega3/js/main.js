@@ -11,7 +11,6 @@ let canvasHeight = canvas.height;
 // Fondo de menu e inicio 
 const backgroundImage = new Image();
 backgroundImage.src = "./img/fondoTablero.jpg";
-//backgroundImage.src = "css/imagenes/Juego/caratula.png";
 // Boton para elegir cantidad de fichas 
 const botonElegirJuego = new Image();
 botonElegirJuego.src = "./img/btn-azul.svg";
