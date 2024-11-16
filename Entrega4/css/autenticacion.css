@@ -1,0 +1,223 @@
+/*FORM REGISTRARSE*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+body{
+    background-image: url("../img/fondoRegistrar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor-autenticacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#1F1F1F;
+    height: 90%;
+    width: 510px;
+    padding: 100px 0px;
+    margin: 40px 0px;
+}
+
+#registro {
+    padding: 30px 0px;
+}
+
+.form-autenticacion{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+} 
+
+input, button{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #FA1B5E;
+    color:white;
+}
+
+.forgot-pass {
+    font-size: 11px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+p:not(.forgot-pass) {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.google {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.facebook {
+    background-color: #3566A5;
+}
+
+#btn_registrarse {
+    margin-top: 15px;
+}
+
+#btn_registrado:hover {
+    background-color: #FE5085;
+}
+
+#crearcuenta {
+    font-size: 11px;
+    color: #FE5085;
+    text-decoration: underline;
+}
+
+.captcha{
+    height: 70px;
+    width: 268px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    background-color: #f9f9f9;
+    stroke: #d7dbe4;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_der p{
+    font-family: 'Arial';
+    font-size: 8px;
+    color: #555555;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+
+#txt-robot{
+    margin-left: 10px;
+    font-family: 'Arial';
+    font-size: 12px;
+    color: black;
+}
+
+.contenedor_der {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.checkbox{
+    width: 25px;
+    height: 25px;
+}
+
+.contenedor_izq{
+    display: flex;
+    align-items: center;
+}
+
+.hvr-rectangle-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #FA1B5E;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-rectangle-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: #35A1AD;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+    color: white;
+}
+
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.login-btn .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.login-btn.google {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+.login-btn.google:hover {
+    transform: scale(1.05);
+}
+
+.login-btn.facebook {
+    background-color: #3B5998;
+    color: white;
+    border: none;
+}
+
+.login-btn.facebook:hover {
+    transform: scale(1.05);
+}

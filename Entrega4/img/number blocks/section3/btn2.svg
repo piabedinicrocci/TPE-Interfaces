@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 89.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #83c252;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 8px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #02187e;
+        stroke: #02187e;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <g>
+        <path class="cls-4" d="M45,15.27h474c18.23,0,33,14.77,33,33h0c0,18.23-14.77,33-33,33H45c-18.23,0-33-14.77-33-33h0c0-18.23,14.77-33,33-33Z"/>
+        <path class="cls-3" d="M45,11.27h474c20.43,0,37,16.57,37,37h0c0,20.43-16.57,37-37,37H45c-20.43,0-37-16.57-37-37h0c0-20.43,16.57-37,37-37Z"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M41,8h474c18.23,0,33,14.77,33,33h0c0,18.23-14.77,33-33,33H41c-18.23,0-33-14.77-33-33h0c0-18.23,14.77-33,33-33Z"/>
+        <path class="cls-2" d="M41,4h474c20.43,0,37,16.57,37,37h0c0,20.43-16.57,37-37,37H41c-20.43,0-37-16.57-37-37h0C4,20.57,20.57,4,41,4Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
