@@ -61,7 +61,6 @@ justify-content: space-between;
 }
 
 .section1{
-    background-image: url('../img/number blocks/section1/fondo.svg');
     height: 960px;
 }
 
@@ -95,7 +94,418 @@ justify-content: space-between;
 }
 
 
-.app-divertida{
-    background-image: url('../img/number blocks/section2/fondo.svg');
-    background-color: white;
+
+
+/*--------------------------SECTION 2 ---------------------*/
+
+
+
+    
+.personaje5{
+    margin-left: 787px;
+    position: relative;
+    width: 572px;
+    height: 1259px;
+    bottom: 900px;
+
+}
+.personaje4{
+    position: relative;
+    bottom: 1400px;
+    margin-left: 100px;
+    width: 602px;
+    height: 603px;
+
+}
+
+
+.background2,.background-blanco{
+    position: absolute;
+}
+
+
+
+
+
+/*-----Scroll de imagenes---*/
+.slider {
+    width: 576px;
+    height: 324px;
+    overflow: hidden;
+    border: #1B5F99 77px solid;
+    border-radius: 77px ;
+}
+.slider ul {
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    animation: cambio 20s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+
+}
+
+.contenedor-frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 1080px;
+    position: relative;
+
+}
+
+
+.frame1 p,.frame2 p,.frame3 p{
+    font-size: 20px;
+    width: 333px;
+    height: 218px;
+    
+}
+
+
+.frame1 img,.frame2 img,.frame3 img{
+    width: 333px;
+    height: 303px;
+}
+
+.frame1,.frame2,.frame3{
+    width: 333px;
+    height: 544px;
+    position: relative;
+
+}
+
+
+
+.contenedor-img{
+    margin-top: auto;
+    margin-left: 236px;
+    position: relative;
+
+    
+}
+
+.titulo-app-divertida{
+    color: #1B428F;
+    width: 508px;
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: 47px;
+    position: relative;
+
+}
+
+.texto-app-divertida{
+    color: #1B428F;
+    width: 704px;
+    margin-left: 100px;
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+
+
+
+/*---------------------- section3 ------------------*/
+
+
+
+
+.decargar-numberBlocks{
+    height: 1157px;
+    justify-content: center;
+    align-content:end;
+}
+
+
+
+.number-blocks-text{
+    font-weight: 600;
+    padding-top: 200px;
+}
+
+.number-blocks-text p{
+    font-style: italic;
+}
+
+.number-blocks-text p,.number-blocks-text{
+    font-size: 61.14px;
+    color: black;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.background-violeta{    
+    position: absolute;
+    height: 1157px;
+}
+.number-blocks{
+    position: relative;
+    justify-self: baseline;
+    height: 767px;
+    bottom: 28px;
+
+    
+}
+
+
+
+
+/*---------------------- section4 ------------------*/
+
+
+.scroll-imagenes{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+}
+.scroll-imagenes img{
+    width: 260px;
+}
+
+.scroll-contenedor-textos{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-left: 600px;
+
+}
+
+
+.scroll-contenedor-textos div{
+    margin-right: 100px;
+    width: 467px;
+    
+}
+
+.scroll-de-personajes h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: 100px;
+    margin-top: 174px;
+}
+
+.scroll-contenedor-textos h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top:267px;
+}
+.scroll-contenedor-textos div{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+/*---------------------- section5 ------------------*/
+
+
+
+.section5 img{
+    position: absolute;
+    height: 1445px;
+}
+
+.section5 h1{
+    width: 802px;
+    color: white;
+    bottom: 46px;
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 297px;
+    margin-left: 100px;
+}
+
+.personaje3{
+    position: relative;
+    width: 638px;
+    height: 989px;
+    margin-left: 731px;
+}
+
+.section5-video img{
+     width: 804px;
+     height: 452px;
+     position: relative;
+     margin-left: 100px;
+}
+
+
+/*---------------------- section6 ------------------*/
+.section6{
+    width: 100%;
+    margin-left: 100px;
+    padding-top: 208px;
+  
+}
+
+.contenedor-personajes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.contenedor-personajes img{
+   height: 270px;
+    width: 386px;
+   
+}
+
+.section6 div{
+    font-size: 20px;
+    width: 467px;
+    margin-top: 46px;
+}
+.section6 h1{
+    color:#9D2121;
+    font-size: 60px;
+    width: 746px;
+    position: relative;
+    
+    
+}
+.section6 img{
+    width: 667px;
+    height: 973px;
+    padding-top: 208px;
+    margin-left: 599px;
+    position: relative;
+
+}
+
+.section6 img{
+    width: 667px;
+
+        margin: 20px auto;
+        display: block;
+
+}   
+
+/*----------------------- section7 ----------------*/
+.section7-titulo{
+    font-size: 60px;
+    font-weight: 600;
+    width: 816px;
+    
+}
+
+.fondo{
+    height: 1296px;
+    width: 1280px;
+    position: absolute;
+}
+.section7-texto{
+    font-size: 20px;
+    width: 578px;
+    height: 95px;
+ 
+}
+
+
+.section7-texto span{
+    text-decoration-line: underline;
+
+    
+}
+.section7-texto img{
+    width: 231px;
+    height: 145px;
+    margin-top: 11px;
+}
+.input{
+    width: 780px;
+    height: 100px;
+    margin-top: 35px;
+    margin-bottom: 46px;
+}
+
+
+/*-----------FOOTER -------*/
+
+.banner-juegos{
+ background-color: #242424;
+ width: 1280px;
+ height: 80px;
+}
+.banner-juegos img{
+    margin-left: 100px;
+    height: 75px;
+    width: 1080px;
+}
+
+footer{
+    width: 1280px;
+    height: 515px;
+    background-color: #5E5E5D;
+    font-size: 20px;
+    padding-top: 35px;
+}
+
+footer p{
+    text-decoration-line: underline;
+    margin-left: 100px;
+    margin-top: 22px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+footer div{
+    width: 820px;
+    margin-left: 100px;
+    color: white;
+    
+}
+.redes img{
+    width: 40px;
+    height: 40px;
+}
+.redes{
+    background-color: black;
+    width: 220px;
+    height: 41px;
 }
