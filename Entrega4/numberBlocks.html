@@ -8,19 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/numberBlocks.css">
+     <!-------------------------- <link rel="stylesheet" href="css/preloader.css">  ---------------------------------------->
 
 
 </head>
 <body>
+
+
+    <!-- PRE CARGA
+    <div id="contenedor-carga" class="contenedor-carga">
+        <div id="carga" class="carga"></div>
+        
+        <div class="porcentaje">
+            <img src="" alt="" srcset="">
+            <p id="porcentaje-carga">0%</p>
+        </div>
+    </div>
+ -->
+    <!-- LOADER 
+
+    <div id="contenedor-carga" class="contenedor-carga">
+        <div id="carga" class="carga">
+            <iframe src="https://giphy.com/embed/36NW49K1kdbbvGCS7A" width="480" height="271" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/NumberblocksOfficial-numbers-blocks-numberblocks-36NW49K1kdbbvGCS7A">via GIPHY</a></p>
+        </div>
+        <div class="porcentaje">
+            <img src="" alt="" srcset="">
+            <p id="porcentaje-carga">0%</p>
+        </div>
+    </div>
+-->
+
+
+
     <header id="header">
 
     
-        <button class="categories-menu-toggle" aria-label="Desplegar menú categorías" tabindex="0">
-            <img id="menu-toggle-id" src="img/number blocks/menu-hamburguesanumber.svg" alt="desplegar menu">
-        </button>
+        <div class="burger_container">
+            <div id="btn_menu">
+                <span class="linea1 barras" id="linea1"></span>
+                <span class="linea2 barras" id="linea2"></span>
+                <span class="linea3 barras" id="linea3"></span>
+            </div>
+            
+            <!--  <img id="menu-toggle-id" src="img/number blocks/menu-hamburguesanumber.svg" alt="desplegar menu"> -->
+           
+    
 
-        <nav class="navbar">
-            <div id="menu-categorias-id" class="menu-categorias">
+        <nav id="navbar" class="hidden">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Descargar</a></li>
@@ -28,8 +62,9 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
                
-            </div>
+            
         </nav>
+    </div>
         <!-- LOGO -->
            <img class="logo-numberBlocks" src="img/number blocks/logo.png" alt="Logo Number Blocks" id="logo">
            <button class="btn-comprar">
@@ -152,19 +187,19 @@
             <h1>Más amigos, más diversión!</h1>
             
             
-            <div class="scroll-imagenes">
+            <div class="scroll-imagenes" data-parallax="scroll" data-speed="0.5">
                 
-                <img src="img/number blocks/section4/0.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/1.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/2.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/3.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/4.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/5.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/6.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/7.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/8.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/9.svg" alt="" srcset="">
-                <img src="img/number blocks/section4/10.svg" alt="" srcset="">
+                <img src="img/number blocks/section4/0.svg" alt="0" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/1.svg" alt="1" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/2.svg" alt="2" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/3.svg" alt="3" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/4.svg" alt="4" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/5.svg" alt="5" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/6.svg" alt="6" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/7.svg" alt="7" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/8.svg" alt="8" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/9.svg" alt="9" class="amigos-diversion-image">
+                <img src="img/number blocks/section4/10.svg" alt="10" class="amigos-diversion-image">
             </div>
             
 
@@ -251,7 +286,10 @@
                     </a>
                 </button>
             </div>
-            <img class="personaje3" src="img/number blocks/section5/3.svg">
+            <div class="video-youtube-numero-3">
+
+                <img class="personaje3" src="img/number blocks/section5/3.svg">
+            </div>
         </div>
     </section>
 
@@ -267,9 +305,12 @@
                 y los bloques, verán cómo sus acciones tienen un impacto real en el entorno, creando un aprendizaje
                 dinámico y emocionante. ¡Cada sesión de juego se convierte en una experiencia inolvidable llena
                 de color y diversión!</p>
+                
 
-                <model-viewer camera-controls alt="A 3D model of block 1" src="img/number blocks/section6/1.svg">
-                </model-viewer>
+                <model-viewer id="personaje1_3d" auto-rotate src="img/number blocks/3D/one.glb" camera-orbit="-90deg 80deg"
+                alt="A 3D model of character 1" shadow-intensity="2" poster="img/number blocks/3D/image_0.png">
+            </model-viewer>
+                
             
         </div>
         
@@ -351,5 +392,10 @@
                 <img src="img/number blocks/section7/instagram.svg" alt="" srcset="">
             </div>
         </footer>
+
+        <script src="js/number blocks/videoYouTube.js"></script>
+        <script src="js/number blocks/mas-amigos.js"></script>
+        <script src="js/number blocks/loading.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </body>
 </html>
