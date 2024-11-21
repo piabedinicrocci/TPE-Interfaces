@@ -7,7 +7,6 @@
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 body{
@@ -91,9 +90,9 @@ body{
     top: -8px;
     position: relative;
     border: 8px solid #FFF;
-    background: #83C252;
+    background-color: #83C252;
     box-shadow: 4px 5px 0px 0px #02187E;
-    color: #FFF;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,21 +103,51 @@ body{
     line-height: 18.9px;
     letter-spacing: 2.2px;
     cursor: pointer;
-    outline: none; 
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    text-align: center;
 }
 
-.btn-comprar:hover {
-    background-color: #4CAF50;
-    box-shadow: 6px 6px 0px 0px #02187E; 
+/* Hover boton comprar */
+@-webkit-keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
-.btn-comprar:active {
-    box-shadow: 2px 3px 0px 0px #02187E;
-    background-color: #159119;
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
+.hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
 
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
 
 .logo-numberBlocks{
     width: 550px;
@@ -126,19 +155,6 @@ body{
     transform: translateY(110px);
     transition: all .5s;
 
-}
-
-
-.btn-comprar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 900;
-    font-style: normal;
-    color: white;
-    background: none;
 }
 
 @keyframes hideNav {
