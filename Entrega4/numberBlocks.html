@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/numberBlocks.css">
      <!-------------------------- <link rel="stylesheet" href="css/preloader.css">  ---------------------------------------->
-
-
 </head>
 <body>
 
@@ -34,9 +32,7 @@
 
         <!-- LOGO -->
         <img class="logo-numberBlocks" src="img/logo.png" alt="Logo Number Blocks" id="logo">
-        <button class="btn-comprar hvr-pulse">
-            <p>COMPRAR</p>
-        </button>
+        <button class="btn-comprar hvr-pulse" id="btn-comprar">COMPRAR</button>
     </header>
 
     <!-------------------------- SECCION 1 - HERO   ---------------------------------------->
@@ -108,7 +104,7 @@
         </div>
     </section>
     
-    <!-------------------------- SECCION 3   DESCARGA APP ---------------------------------------->
+    <!-------------------------- SECCION 3  DESCARGA APP ---------------------------------------->
     <section class="descargar-numberBlocks">
         <div class="number-blocks">
             <h1>Descubre el juego que convierte las <span> Matemáticas </span> en diversión. </h1> 
@@ -202,7 +198,7 @@
         </div>
     </section>
 
-    <!-------------------------- SECCION 5  VIDEO  ---------------------------------------->
+    <!-------------------------- SECCION 5 VIDEO  ---------------------------------------->
     <section class="section5">
         <h1> Mira el video y descubre el sorprendente mundo de los NumberBlocks! </h1>
         <div class="section5-video">
@@ -225,29 +221,27 @@
                 las matemáticas cobren una nueva dimensión. A medida que los niños interactúan con los personajes
                 y los bloques, verán cómo sus acciones tienen un impacto real en el entorno, creando un aprendizaje
                 dinámico y emocionante. ¡Cada sesión de juego se convierte en una experiencia inolvidable llena
-                de color y diversión!</p>
+                de color y diversión!
+            </p>
         
-            <model-viewer id="personaje1_3d" auto-rotate src="img/3D/one.glb" camera-orbit="-90deg 80deg"
-            alt="A 3D model of character 1" shadow-intensity="2" poster="img/3D/image_0.png">
-            </model-viewer>
+            <model-viewer id="personaje1_3d" auto-rotate src="img/3D/one.glb" camera-orbit="-90deg 80deg" alt="A 3D model of character 1" shadow-intensity="2" poster="img/3D/image_0.png"></model-viewer>
         </div>
     </section>
 
-        <section class="contenedor-personajes-grid">
-            <div class="contenedor-personajes">
-                <img src="img/section6/grid/grid_1.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_2.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_3.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_4.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_5.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_6.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_7.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_8.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_9.png" alt="" srcset="">
-                <img src="img/section6/grid/grid_10.png" alt="" srcset="">
-             </div>
-        </section>
-        <!-------------------------- SECCION 7 ---------------------------------------->
+    <section class="contenedor-personajes-grid">
+        <div class="contenedor-personajes">
+            <img src="img/section6/grid/grid_1.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_2.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_3.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_4.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_5.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_6.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_7.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_8.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_9.png" alt="" srcset="">
+            <img src="img/section6/grid/grid_10.png" alt="" srcset="">
+            </div>
+    </section>
 
     <!-------------------------- SECCION 7 ---------------------------------------->
     <section id="section7">
@@ -296,7 +290,7 @@
             <img src="img/section7/instagram.svg" alt="" srcset="">
         </div>
 
-        <div class="character_spritsheet">
+        <!-- <div class="character_spritsheet">
             <img src="../Entrega4/img/section7/character_spritsheet.png" class="character" alt="">
         </div>
 
@@ -306,10 +300,12 @@
 
         <div class="character3_spritsheet">
             <img src="../Entrega4/img/section7/cc-Photoroom.png" class="character3" alt="">
-        </div>
+        </div> -->
+        
     </footer>
 
     <!-------------------------- JS ---------------------------------------->
+    <script src="js/video.js"></script>
     <script src="js/navBar.js"></script>
     <script src="js/logo.js"></script>
     <script src="js/parallax.js"></script>

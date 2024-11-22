@@ -11,8 +11,6 @@
 body{
     width: 1280px;
     margin: 0 auto;
-
-
 }
 
 .hidden{
@@ -94,15 +92,21 @@ header #btn_menu {
     text-align: center;
 }
 
+#btn-comprar {
+    box-shadow: 4px 5px 0px 0px #02187E;
+}
+
 /* Hover boton comprar */
 @-webkit-keyframes hvr-pulse {
     25% {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        box-shadow: 4px 5px 0px 0px #02187E;
     }
     75% {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
+        box-shadow: 4px 5px 0px 0px #02187E;
     }
 }
 
@@ -143,8 +147,6 @@ header #btn_menu {
     transition: all 0.6s ease-in-out;
 }
 
-
-
 nav {
     position: fixed;
     margin-top: 32px;
@@ -153,14 +155,12 @@ nav {
     padding: 10px 0;
 }
 
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: block;
     justify-content: center;
-   
 }
 
 nav ul li {
@@ -168,16 +168,15 @@ nav ul li {
     background: linear-gradient(to right, #83C252, #F39E46);    text-transform: uppercase;
     animation: showNav 0.5s ease forwards;
     padding: 8px 5px;
-    border-radius: 10px; /* Aquí agregamos el border-radius */
-    margin-bottom: 10px; /* Espaciado entre los li */
-    transition: all 0.3s ease; /* Para suavizar la transición en hover */
-    
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
 nav ul li:hover {
-    background: linear-gradient(to right, #F39E46, #83C252); /* Invertir colores en el hover */
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Agregar sombra sutil */
+    background: linear-gradient(to right, #F39E46, #83C252); 
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -188,8 +187,6 @@ a {
     font-size: 20px;
     margin-left: 10px;
 }
-
-
 
 nav ul li:nth-child(1) {
     animation-delay: 0s;
@@ -211,7 +208,6 @@ nav ul li:nth-child(5) {
     animation-delay: 1.2s;
 }
 
-
 @keyframes showNav {
     0% {
         opacity: 0;
@@ -231,8 +227,7 @@ nav ul li:nth-child(5) {
     
 }
 
-/*-------------------------- HERO----------------*/
-
+/*-------------------------- SECTION 1 HERO----------------*/
 .hero {
     top: 0;
     left: 0;
@@ -460,12 +455,8 @@ nav ul li:nth-child(5) {
     height: 154px;
 }
 
-
 /*--------------------------SECTION 2 ---------------------*/
-
-
 /*--- SLIDE DE IMAGENES --*/
-
 .contenedor-img{
     position: absolute;
     box-sizing: border-box;
@@ -549,7 +540,6 @@ nav ul li:nth-child(5) {
     opacity: 0px;
 }
 
-
 /*------------------    APP DIVERTIDA   ---------------------*/
 .app-divertida {
     font-family: Lato;
@@ -578,7 +568,6 @@ nav ul li:nth-child(5) {
     width: 704px;
     height: 154px;
 }
-
 
 .card-slid {
     position: absolute;
@@ -636,15 +625,8 @@ nav ul li:nth-child(5) {
     }
 }
 
-
-
-
-/*---------------------- section3 DESCARGAR NUMBER BLOCKS------------------*/
-
-
-
-
-.descargar-numberBlocks{
+/*---------------------- SECTION 3 DESCARGAR NUMBER BLOCKS------------------*/
+.descargar-numberBlocks {
     background-image: url(../img/section3/fondo-violeta.svg);
     background-position: center;
     background-size: cover;
@@ -654,11 +636,11 @@ nav ul li:nth-child(5) {
     overflow: hidden;
 }
 
-
-.number-blocks{
+.number-blocks {
     justify-items: center;
 }
-.descargar-numberBlocks h1{
+
+.descargar-numberBlocks h1 {
     margin-top: 180px;
     margin-bottom: 72px;
     font-family: Lato;
@@ -671,7 +653,7 @@ nav ul li:nth-child(5) {
     width: 890px;
 }
 
-.descargar-numberBlocks span{
+.descargar-numberBlocks span {
     font-family: Lato;
     font-size: 61.14px;
     font-style: italic;
@@ -682,13 +664,12 @@ nav ul li:nth-child(5) {
     text-decoration-skip-ink: none;
 }
 
-#number-blocks-personajes{
+#number-blocks-personajes {
     position: relative;
     height: fit-content;
     transition: transform 0.1s ease-out;
     justify-content: center; 
 }
-
 
 .descargar-numberBlocks button {
     padding-top: 25px;
@@ -697,7 +678,6 @@ nav ul li:nth-child(5) {
     padding-left: 20px;
     width: 565px;
 }
-
 
 .descargar_btn {
     background-color: rgba(131, 194, 82, 1);
@@ -740,12 +720,11 @@ nav ul li:nth-child(5) {
 }
 
 .descargar_btn:hover {
-    animation: bounceRotate 0.6s ease-in-out; /* Activa la animación al hover */
-    background-color: rgba(99, 173, 62, 1); /* Cambia el color del fondo */
-    box-shadow: 0 10px 20px rgba(2, 24, 126, 0.5), 0 5px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    animation: bounceRotate 0.6s ease-in-out;
+    background-color: rgba(99, 173, 62, 1);
+    box-shadow: 0 10px 20px rgba(2, 24, 126, 0.5), 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Animación de rebote y giro */
 @keyframes bounceRotate {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -764,59 +743,53 @@ nav ul li:nth-child(5) {
     }
 
 }
-/*---------------------- section4 ------------------*/
 
-
-.scroll-imagenes{
+/*---------------------- SECTION 4 ------------------*/
+.scroll-imagenes {
     display: flex;
     flex-direction: column;
     position: absolute;
     justify-content: space-between;
 }
-.scroll-imagenes img{
+
+.scroll-imagenes img {
     width: 260px;
 }
 
-.scroll-contenedor-textos{
+.scroll-contenedor-textos {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     margin-left: 600px;
-
 }
 
-
-.scroll-contenedor-textos div{
+.scroll-contenedor-textos div {
     margin-right: 100px;
     width: 467px;
-    
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.scroll-de-personajes h1{
+.scroll-de-personajes h1 {
     font-size: 60px;
     font-weight: 600;
     margin-left: 100px;
     margin-top: 174px;
 }
 
-.scroll-contenedor-textos h2{
+.scroll-contenedor-textos h2 {
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 15px;
     margin-top:267px;
 }
-.scroll-contenedor-textos div{
-    font-size: 20px;
-    font-weight: 400;
+
+.amigos-diversion-image {
+    margin: 10px 250px;
 }
 
-
-
-
-
 /*---------------------- SECTION 5  VIDEO------------------*/
-
-.section5{
+.section5 {
     display: flex;
     width: 100%;
     background-image: url(../img/section5/fondo-amarillo.svg);
@@ -828,9 +801,7 @@ nav ul li:nth-child(5) {
     position: relative;
 }
 
-
-
-.section5 h1{
+.section5 h1 {
     font-family: Lato;
     font-size: 60px;
     font-weight: 600;
@@ -842,13 +813,14 @@ nav ul li:nth-child(5) {
     top: 308px;
     left: 100px;
 }
-.contenedor-video img{
+
+.contenedor-video img {
     width: 804px;
     height: 452px;
     margin-left: 100px;
 }
 
-.contenedor-video{
+.contenedor-video {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -857,9 +829,10 @@ nav ul li:nth-child(5) {
     top: 525px;
     left: 100px;
     transform: translateX(-100px);
+    animation: none;
 }
 
-.video{
+.video {
     position: absolute;
     width: 750px;
     height: 390px;
@@ -867,35 +840,44 @@ nav ul li:nth-child(5) {
     border-radius: 15px;
 }
 
-
-
-.section5-video{
+.section5-video {
     display: flex;
     flex-direction: row;
     align-items: start;
+    overflow: hidden;
 }
 
-.personaje3{
+.personaje3 {
     display: flex;
     position: absolute;
     width: 638px;
     height: 989px;
-    left: 731px;
+    left: 621px;
     top: 351px;
+    transform: translateX(100px);
+    animation: none;
 }
 
-
-@keyframes transformUnset {
-    100% {
+@keyframes moveVideo {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
         transform: unset;
     }
 }
 
+@keyframes moveCharacter {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: unset;
+    }
+}
 
-
-
-/*---------------------- section6 ------------------*/
-.section6{
+/*---------------------- SECTION 6 ------------------*/
+.section6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -903,16 +885,15 @@ nav ul li:nth-child(5) {
     padding: 0 102px;
     height: 973px;
     position: relative;
-  
 }
 
-.contenedor{
+.contenedor {
     display: flex;
     flex-direction: column;
     gap: 43px;
 }
 
-.contenedor p{
+.contenedor p {
     font-family: Lato;
     font-size: 20px;
     font-weight: 400;
@@ -921,28 +902,25 @@ nav ul li:nth-child(5) {
     color: black;
     width: 467px;
 }
-.section6 h1{
+
+.section6 h1 {
     color:#9D2121;
     font-size: 60px;
     width: 746px;
     position: relative;
-    
 }
 
-.contenedor-personajes{
+.contenedor-personajes {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: 368px 320px;
     z-index: 0;
     background-image: url(../img/section6/grid/grid.png);
-    
-       
 }
 
-.contenedor-personajes-grid{
+.contenedor-personajes-grid {
     margin-bottom: 400px;
 }
-
 
 .contenedor-personajes img {
     width: 263px;
@@ -952,13 +930,10 @@ nav ul li:nth-child(5) {
     align-self: stretch;
 }
 
-
-
 .contenedor-personajes img:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
-
 
 /*--- MODELACION 3D--*/
 #personaje1_3d {
@@ -969,12 +944,11 @@ nav ul li:nth-child(5) {
     top: 0;
 }
 
-/*----------------------- section7 ----------------*/
+/*----------------------- SECTION 7 ----------------*/
 .section7-titulo{
     font-size: 60px;
     font-weight: 600;
     width: 816px;
-    
 }
 
 #section7{
@@ -992,86 +966,45 @@ nav ul li:nth-child(5) {
     margin-left: 100px;
 }
 
-
 .nubes {
     position: absolute;
     top: 0;
-    
 }
 
 .nube {
     width: 387px;
     position: absolute;
     animation: nubes infinite linear;
-
 }
 
 .nube:first-child {
     top: 370px;
     animation-duration: 30s;
-    animation-delay: 0s; /* Sin retraso */
+    animation-delay: 0s;
 }
 
 .nube:nth-child(2) {
     width: 265px;
     top: 327px;
     animation-duration: 40s;
-    animation-delay: 5s; /* Agrega un retraso */
+    animation-delay: 5s;
 }
 
 .nube:nth-child(3) {
     top: 629px;
     animation-duration: 35s;
-    animation-delay: 10s; /* Agrega un retraso */
+    animation-delay: 10s;
 }
 
 @keyframes nubes {
     0% {
-        transform: translateX(100vw); /* Empieza desde la derecha */
+        transform: translateX(100vw);
     }
     100% {
-        transform: translateX(-400px); /* Se mueve hacia la izquierda */
+        transform: translateX(-400px); 
     }
 }
 
-
-/*
-.nubes {
-    position: absolute;
-    top: 0;
-}
-
-.nube {
-    width: 387px;
-    position: absolute;
-    animation: nubes infinite linear;
-}
-
-#nube:first-child {
-    top: 370px;
-    transform: translateX(1280px);
-    animation-duration: 30s;
-}
-
-#nube:nth-child(2) {
-    width: 265px;
-    top: 327px;
-    transform: translateX(1000px);
-    animation-duration: 40s;
-}
-
-#nube:nth-child(3) {
-    top: 629px;
-    transform: translateX(1400px);
-    animation-duration: 35s;
-}
-
-@keyframes nubes {
-    100% {
-        transform: translateX(-400px);
-    }
-}
-*/
 #number2 {
     width: 480px;
     height: 480px;
@@ -1099,31 +1032,23 @@ nav ul li:nth-child(5) {
     top: 423px;
 }
 
-
-
 #img-pasto {
     position: absolute;
     left: 0;
     top: 991px;
 }
 
-
-
-
 .section7 {
     background: linear-gradient(180deg, #FFFFFF 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
     height: 1380px;
     position: relative;
-    
 }
 
-
-.section7-texto span{
-    text-decoration-line: underline;
-
-    
+.section7-texto span {
+    text-decoration-line: underline; 
 }
-.section7-texto img{
+
+.section7-texto img {
     width: 231px;
     height: 145px;
     margin-top: 11px;
@@ -1140,10 +1065,6 @@ nav ul li:nth-child(5) {
     line-height: 94.5%;
     /* 56.7px */
 }
-
-
-
-
 
 .section7 form input {
     width: 553px;
@@ -1193,24 +1114,20 @@ nav ul li:nth-child(5) {
     border-radius: 0px 50px 50px 0px;
     border: 9px solid #FFF;
     background: #83C252;
-    /* Drop Shadow */
-    /* box-shadow: 4px 5px 0px 0px #02187E; */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Necesario para animaciones internas */
-    overflow: hidden; /* Para limitar contenido adicional */
-    transition: all 0.3s ease-in-out; /* Animaciones suaves */
+    position: relative; 
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Hover dinámico */
 .section7 form div:hover {
-    transform: translateX(10px); /* Desplaza el botón ligeramente */
-    background: linear-gradient(90deg, #83C252 0%, #99D95E 100%); /* Gradiente dinámico */
-    box-shadow: 4px 5px 10px rgba(2, 24, 126, 0.5); /* Sombra más prominente */
+    transform: translateX(10px);
+    background: linear-gradient(90deg, #83C252 0%, #99D95E 100%);
+    box-shadow: 4px 5px 10px rgba(2, 24, 126, 0.5);
 }
 
-/* Brillo en hover */
 .section7 form div::before {
     content: '';
     position: absolute;
@@ -1227,39 +1144,29 @@ nav ul li:nth-child(5) {
     left: 100%;
 }
 
-
-
-
-
-
-
-
-
-
 /*-----------FOOTER -------*/
-
-.banner-juegos{
+.banner-juegos {
  background-color: #242424;
  width: 1280px;
  height: 80px;
 }
-.banner-juegos img{
+
+.banner-juegos img {
     margin-left: 100px;
     height: 75px;
     width: 1080px;
 }
 
-footer{
+footer {
     width: 1280px;
     height: 515px;
     background-color: #5E5E5D;
     font-size: 20px;
     padding-top: 35px;
     position: relative;
-
 }
 
-footer p{
+footer p {
     text-decoration-line: underline;
     margin-left: 100px;
     margin-top: 22px;
@@ -1267,26 +1174,24 @@ footer p{
     margin-bottom: 35px;
 }
 
-footer div{
+footer div {
     width: 820px;
     margin-left: 100px;
     color: white;
-    
 }
-.redes img{
+
+.redes img {
     width: 40px;
     height: 40px;
 }
-.redes{
+
+.redes {
     background-color: black;
     width: 220px;
     height: 41px;
 }
 
-
-
-
-.character_spritsheet,
+/* .character_spritsheet,
 .character2_spritsheet,
 .character3_spritsheet {
     overflow: hidden;
@@ -1317,7 +1222,7 @@ footer div{
 
 .character {
     animation: number_spritsheet 1s steps(4) infinite;
-}
+} 
 
 .character2 {
     animation: number_spritsheet 1s steps(5) infinite;
@@ -1335,5 +1240,5 @@ footer div{
     to {
         transform: translate3d(-100%, 0, 0);
     }
-}
+} */
     
