@@ -11,6 +11,7 @@
 body{
     width: 1280px;
     margin: 0 auto;
+
 }
 
 .hidden{
@@ -221,6 +222,8 @@ nav ul li:nth-child(5) {
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
     background-size: 100% auto;
+    position: relative;
+    overflow: hidden; 
 }
 
 .arbol_izq {
@@ -407,15 +410,35 @@ nav ul li:nth-child(5) {
     height: 1259px;
     top: 867px;
     left: 787px;
-   
 }
 
+.app-divertida {
+    font-family: Lato;
+    text-align: left;
+    color: rgba(27, 66, 143, 1);
+    position: absolute;
+    top: 1014px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
 
+.app-divertida h3 {
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 44.41px;
+    width: 508px;
+    height: 132px;
+}
 
-
-
-
-
+.app-divertida p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 704px;
+    height: 154px;
+}
 
 
 /*--------------------------SECTION 2 ---------------------*/
@@ -435,21 +458,46 @@ nav ul li:nth-child(5) {
     padding: 29px;
     z-index: 13;
     overflow-x: hidden;
-    
 }
-
-
-
 
 .contenedor-frame{
     display: flex;
     justify-content: center;
     gap: 36px;
     margin-top: 60px;
-
+    background-color: pink;
 }
 
+.frame:nth-child(1).float-animation {
+    animation-delay: 0s;
+}
 
+.frame:nth-child(2).float-animation {
+    animation-delay: 1s;
+}
+
+.frame:nth-child(3).float-animation {
+    animation-delay: 2s;
+}
+
+.float-animation {
+    animation: appear 1s ease-in-out;
+    position: sticky;
+    transform-origin: center;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 .frame {
     display: block;
@@ -893,25 +941,20 @@ nav ul li:nth-child(5) {
 
 }
 
-
-
-
 .section7-texto{
     font-size: 20px;
     width: 578px;
     height: 95px;
     margin-top: 46px;
     margin-left: 100px;
- 
 }
 
-#nubes {
-    position: absolute;
+.nubes {
+    position: relative;
     top: 0;
-
 }
 
-#nube-s7 {
+.nube {
     width: 387px;
     position: absolute;
     animation: nubes infinite linear;
