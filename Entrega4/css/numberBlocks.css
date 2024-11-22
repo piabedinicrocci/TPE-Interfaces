@@ -854,13 +854,14 @@ nav ul li:nth-child(5) {
 
 
 .contenedor-personajes img {
-    width: 260px;
+    width: 263px;
     transition: all 0.3s ease;
     filter: brightness(0.9);
     z-index: 1;
-    
-
+    align-self: stretch;
 }
+
+
 
 .contenedor-personajes img:hover {
     transform: scale(1.1);
@@ -889,6 +890,7 @@ nav ul li:nth-child(5) {
     background: linear-gradient(180deg, #FFFFFF 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
     height: 1380px;
     position: relative;
+
 }
 
 
@@ -906,6 +908,7 @@ nav ul li:nth-child(5) {
 #nubes {
     position: absolute;
     top: 0;
+
 }
 
 #nube-s7 {
@@ -923,7 +926,7 @@ nav ul li:nth-child(5) {
 #nube-s7:nth-child(2) {
     width: 265px;
     top: 327px;
-    transform: translateX(1380px);
+    transform: translateX(1000px);
     animation-duration: 40s;
 }
 
@@ -975,17 +978,6 @@ nav ul li:nth-child(5) {
 }
 
 
-main {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    row-gap: 100px;
-    background-color: white;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
 
 
 .section7 {
@@ -1106,6 +1098,8 @@ footer{
     background-color: #5E5E5D;
     font-size: 20px;
     padding-top: 35px;
+    position: relative;
+
 }
 
 footer p{
@@ -1140,13 +1134,14 @@ footer div{
 .character3_spritsheet {
     overflow: hidden;
     position: absolute;
+    margin-left: 0px;
 }
 
 .character_spritsheet {
     width: 150px;
     height: 400px;
-    top: 0;
-    left: 5px;
+    top: 15px;
+    left: 2px;
 }
 
 .character2_spritsheet {
@@ -1161,10 +1156,6 @@ footer div{
     height: 300px;
     right: 100px;
     top: 150px;
-}
-
-.number {
-    animation: number_spritsheet 1s steps(7) infinite;
 }
 
 .character {

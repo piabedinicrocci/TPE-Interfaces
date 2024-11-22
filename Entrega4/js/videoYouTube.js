@@ -1,29 +1,19 @@
-const section = document.querySelector('.section5-video');
-const video = document.querySelector('.contenedor-video');
-const videoNumero3 = document.querySelector('.video-youtube-numero-3');
-let parallaxActive = false;
+// Función que se llama al scrollear, se encarga de llamar a otras funciones
+function getScroll() {
+    const y = this.pageYOffset
 
-const youTubeSectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            parallaxActive = true; // Activa el parallax cuando la sección es visible
-        } else {
-            parallaxActive = false; // Desactiva el parallax cuando la sección no es visible
-        }
-    });
-}, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-});
-youTubeSectionObserver.observe(section);
+    checkScrollForCardsAnimation(y)
 
-window.addEventListener('scroll', () => {
-    if (!parallaxActive) return;
+    moveLogo(y)
 
-    const sectionRect = section.getBoundingClientRect();
-    const scrollOffset = sectionRect.top;
+    parallaxEffect(y)
 
-    video.style.transform = `translateY(${-scrollOffset * 0.1}px)`;
-    videoNumero3.style.transform = `translateY(${scrollOffset * 0.2}px)`;
-});
+    disappearShadows(y)
+
+    moveImages(y)
+
+    if (y >= 10800) {
+        document.querySelector(".contenedor-video").style.animation = "transformUnset 2s ease-in-out both"
+        document.querySelector(".personaje3").style.animation = "transformUnset 1s ease-in-out both"
+    }
+}
