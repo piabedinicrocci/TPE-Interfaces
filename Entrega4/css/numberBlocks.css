@@ -440,10 +440,7 @@ nav ul li:nth-child(5) {
     height: 154px;
 }
 
-
 /*--------------------------SECTION 2 ---------------------*/
-
-
 /*--- SLIDE DE IMAGENES --*/
 
 .contenedor-img{
@@ -529,7 +526,6 @@ nav ul li:nth-child(5) {
     opacity: 0px;
 }
 
-
 /*------------------    APP DIVERTIDA   ---------------------*/
 .app-divertida {
     font-family: Lato;
@@ -558,7 +554,6 @@ nav ul li:nth-child(5) {
     width: 704px;
     height: 154px;
 }
-
 
 .card-slid {
     position: absolute;
@@ -617,13 +612,7 @@ nav ul li:nth-child(5) {
 }
 
 
-
-
-/*---------------------- section3 DESCARGAR NUMBER BLOCKS------------------*/
-
-
-
-
+/*---------------------- SECTION 3 DESCARGAR NUMBER BLOCKS------------------*/
 .descargar-numberBlocks{
     background-image: url(../img/section3/fondo-violeta.svg);
     background-position: center;
@@ -634,10 +623,10 @@ nav ul li:nth-child(5) {
     overflow: hidden;
 }
 
-
 .number-blocks{
     justify-items: center;
 }
+
 .descargar-numberBlocks h1{
     margin-top: 180px;
     margin-bottom: 72px;
@@ -669,7 +658,6 @@ nav ul li:nth-child(5) {
     justify-content: center; 
 }
 
-
 .descargar-numberBlocks button {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -677,7 +665,6 @@ nav ul li:nth-child(5) {
     padding-left: 20px;
     width: 565px;
 }
-
 
 .descargar_btn {
     background-color: rgba(131, 194, 82, 1);
@@ -716,13 +703,7 @@ nav ul li:nth-child(5) {
     display: flex;
 }
 
-
-
-
-
-
-/*---------------------- section4 ------------------*/
-
+/*---------------------- SECTION 4 ------------------*/
 
 .scroll-imagenes{
     display: flex;
@@ -730,6 +711,7 @@ nav ul li:nth-child(5) {
     position: absolute;
     justify-content: space-between;
 }
+
 .scroll-imagenes img{
     width: 260px;
 }
@@ -739,14 +721,11 @@ nav ul li:nth-child(5) {
     flex-direction: column;
     overflow-y: scroll;
     margin-left: 600px;
-
 }
-
 
 .scroll-contenedor-textos div{
     margin-right: 100px;
-    width: 467px;
-    
+    width: 467px; 
 }
 
 .scroll-de-personajes h1{
@@ -762,18 +741,15 @@ nav ul li:nth-child(5) {
     margin-bottom: 15px;
     margin-top:267px;
 }
+
 .scroll-contenedor-textos div{
     font-size: 20px;
     font-weight: 400;
 }
 
+/*---------------------- SECTION 5 VIDEO------------------*/
 
-
-
-
-/*---------------------- SECTION 5  VIDEO------------------*/
-
-.section5{
+.section5 {
     display: flex;
     width: 100%;
     background-image: url(../img/section5/fondo-amarillo.svg);
@@ -784,8 +760,6 @@ nav ul li:nth-child(5) {
     flex-direction: column;
     position: relative;
 }
-
-
 
 .section5 h1{
     font-family: Lato;
@@ -799,6 +773,7 @@ nav ul li:nth-child(5) {
     top: 308px;
     left: 100px;
 }
+
 .contenedor-video img{
     width: 804px;
     height: 452px;
@@ -824,8 +799,6 @@ nav ul li:nth-child(5) {
     border-radius: 15px;
 }
 
-
-
 .section5-video{
     display: flex;
     flex-direction: row;
@@ -841,17 +814,13 @@ nav ul li:nth-child(5) {
     top: 351px;
 }
 
-
 @keyframes transformUnset {
     100% {
         transform: unset;
     }
 }
 
-
-
-
-/*---------------------- section6 ------------------*/
+/*---------------------- SECTION 6 ------------------*/
 .section6{
     width: 100%;
     display: flex;
@@ -860,7 +829,6 @@ nav ul li:nth-child(5) {
     padding: 0 102px;
     height: 973px;
     position: relative;
-  
 }
 
 .contenedor{
@@ -878,12 +846,12 @@ nav ul li:nth-child(5) {
     color: black;
     width: 467px;
 }
+
 .section6 h1{
     color:#9D2121;
     font-size: 60px;
     width: 746px;
-    position: relative;
-    
+    position: relative; 
 }
 
 .contenedor-personajes{
@@ -891,15 +859,12 @@ nav ul li:nth-child(5) {
     grid-template-columns: repeat(5, auto);
     grid-template-rows: 368px 320px;
     z-index: 0;
-    background-image: url(../img/section6/grid/grid.png);
-    
-       
+    background-image: url(../img/section6/grid/grid.png);   
 }
 
 .contenedor-personajes-grid{
     margin-bottom: 400px;
 }
-
 
 .contenedor-personajes img {
     width: 263px;
@@ -909,13 +874,10 @@ nav ul li:nth-child(5) {
     align-self: stretch;
 }
 
-
-
 .contenedor-personajes img:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
-
 
 /*--- MODELACION 3D--*/
 #personaje1_3d {
@@ -926,19 +888,17 @@ nav ul li:nth-child(5) {
     top: 0;
 }
 
-/*----------------------- section7 ----------------*/
+/*----------------------- SECTION 7 ----------------*/
 .section7-titulo{
     font-size: 60px;
     font-weight: 600;
     width: 816px;
-    
 }
 
 #section7{
     background: linear-gradient(180deg, #FFFFFF 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
     height: 1380px;
     position: relative;
-
 }
 
 .section7-texto{
@@ -960,20 +920,20 @@ nav ul li:nth-child(5) {
     animation: nubes infinite linear;
 }
 
-#nube-s7:first-child {
+.nube:first-child {
     top: 370px;
     transform: translateX(1280px);
     animation-duration: 30s;
 }
 
-#nube-s7:nth-child(2) {
+.nube:nth-child(2) {
     width: 265px;
     top: 327px;
     transform: translateX(1000px);
     animation-duration: 40s;
 }
 
-#nube-s7:nth-child(3) {
+.nube:nth-child(3) {
     top: 629px;
     transform: translateX(1400px);
     animation-duration: 35s;
@@ -1012,30 +972,22 @@ nav ul li:nth-child(5) {
     top: 423px;
 }
 
-
-
 #img-pasto {
     position: absolute;
     left: 0;
     top: 991px;
 }
 
-
-
-
 .section7 {
     background: linear-gradient(180deg, #FFFFFF 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
     height: 1380px;
     position: relative;
-    
 }
-
 
 .section7-texto span{
     text-decoration-line: underline;
-
-    
 }
+
 .section7-texto img{
     width: 231px;
     height: 145px;
@@ -1053,10 +1005,6 @@ nav ul li:nth-child(5) {
     line-height: 94.5%;
     /* 56.7px */
 }
-
-
-
-
 
 .section7 form input {
     width: 553px;
@@ -1113,22 +1061,13 @@ nav ul li:nth-child(5) {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
 /*-----------FOOTER -------*/
-
 .banner-juegos{
  background-color: #242424;
  width: 1280px;
  height: 80px;
 }
+
 .banner-juegos img{
     margin-left: 100px;
     height: 75px;
@@ -1142,7 +1081,6 @@ footer{
     font-size: 20px;
     padding-top: 35px;
     position: relative;
-
 }
 
 footer p{
@@ -1157,20 +1095,18 @@ footer div{
     width: 820px;
     margin-left: 100px;
     color: white;
-    
 }
+
 .redes img{
     width: 40px;
     height: 40px;
 }
+
 .redes{
     background-color: black;
     width: 220px;
     height: 41px;
 }
-
-
-
 
 .character_spritsheet,
 .character2_spritsheet,
