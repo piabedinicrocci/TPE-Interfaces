@@ -1191,7 +1191,7 @@ footer div {
     height: 41px;
 }
 
-/* .character_spritsheet,
+.character_spritsheet,
 .character2_spritsheet,
 .character3_spritsheet {
     overflow: hidden;
@@ -1200,10 +1200,9 @@ footer div {
 }
 
 .character_spritsheet {
-    width: 150px;
+    width: 480px;
     height: 400px;
-    top: 15px;
-    left: 2px;
+    left: 325px;
 }
 
 .character2_spritsheet {
@@ -1214,14 +1213,16 @@ footer div {
 }
 
 .character3_spritsheet {
-    width: 140px;
-    height: 300px;
-    right: 100px;
-    top: 150px;
+    width: 460px;
+    height: 460px;
+    top: 90px;
+    left:800px
 }
 
+
+
 .character {
-    animation: number_spritsheet 1s steps(4) infinite;
+    animation: number_spritsheet 3s steps(56) infinite;
 } 
 
 .character2 {
@@ -1229,7 +1230,7 @@ footer div {
 }
 
 .character3 {
-    animation: number_spritsheet 1s steps(4) infinite;
+    animation: number_spritsheet 2s steps(121) infinite;
 }
 
 @keyframes number_spritsheet {
@@ -1240,5 +1241,5 @@ footer div {
     to {
         transform: translate3d(-100%, 0, 0);
     }
-} */
+} 
     
