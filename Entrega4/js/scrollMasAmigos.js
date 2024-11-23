@@ -1,20 +1,20 @@
 // Lista de imágenes para cada sección
 const images = [
-    "img/section4/10.svg", // Sumas Mágicas
-    "img/section4/11.svg", // Rompecabezas de Restas
-    "img/section4/12.svg", // Carrera de Conteo
-    "img/section4/13.svg", // Encuentra el Número Oculto
-    "img/section4/14.svg", // Desafío de Comparación
-    "img/section4/15.svg", // Forma el Número Correcto
-    "img/section4/16.svg", // Encuentra el Número Oculto
-    "img/section4/17.svg", // Salto de Sumas
-    "img/section4/18.svg", // Rompecabezas de Secuencias
-    "img/section4/19.svg", // El Desafío del Doble
-    "img/section4/20.svg", // Aventura de Divisiones
-    "img/section4/21.svg"  // Suma de Amigos
+    "img/section4/0.svg", // Sumas Mágicas
+    "img/section4/1.svg", // Rompecabezas de Restas
+    "img/section4/2.svg", // Carrera de Conteo
+    "img/section4/3.svg", // Encuentra el Número Oculto
+    "img/section4/4.svg", // Desafío de Comparación
+    "img/section4/5.svg", // Forma el Número Correcto
+    "img/section4/6.svg", // Encuentra el Número Oculto
+    "img/section4/7.svg", // Salto de Sumas
+    "img/section4/8.svg", // Rompecabezas de Secuencias
+    "img/section4/9.svg", // El Desafío del Doble
+    "img/section4/10.svg", // Aventura de Divisiones
+    "img/section4/11.svg"  // Suma de Amigos
 ];
 
-const stickyImage = document.getElementById("sticky-image");
+const stickyImage = document.querySelector('.scroll-imagenes');
 const textSections = document.querySelectorAll(".scroll-contenedor-textos div");
 
 // Función para manejar el cambio de imagen

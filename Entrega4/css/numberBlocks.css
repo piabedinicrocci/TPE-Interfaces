@@ -745,22 +745,14 @@ nav ul li:nth-child(5) {
 }
 
 /*---------------------- SECTION 4 ------------------*/
-.scroll-imagenes {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: space-between;
-}
 
-.scroll-imagenes img {
-    width: 260px;
-}
+
+
+
 
 .scroll-contenedor-textos {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    margin-left: 600px;
 }
 
 .scroll-contenedor-textos div {
@@ -770,11 +762,48 @@ nav ul li:nth-child(5) {
     font-weight: 400;
 }
 
-.scroll-de-personajes h1 {
+.section4 h1 {
     font-size: 60px;
     font-weight: 600;
+    line-height: 56.7px;
+    width: 802px;
+    height: 57px;
     margin-left: 100px;
-    margin-top: 174px;
+}
+
+.section4 .scroll-de-personajes {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    align-items: start;
+    gap: 120px;
+    padding-top: 100px;
+}
+.scroll-imagenes{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    width: 50%;
+    position: relative;
+}
+
+.amigos-diversion-image{
+    width: 400px;
+    height: 414px;
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 250px);
+    transform: translateX(-200%);
+    transition: transform .5s;
+}
+
+.amigos-diversion-image:nth-child(1) {
+    transform: unset;
+}
+
+.scroll-imagenes img.active {
+    opacity: 1;
 }
 
 .scroll-contenedor-textos h2 {
@@ -784,9 +813,8 @@ nav ul li:nth-child(5) {
     margin-top:267px;
 }
 
-.amigos-diversion-image {
-    margin: 10px 250px;
-}
+
+
 
 /*---------------------- SECTION 5  VIDEO------------------*/
 .section5 {
