@@ -417,6 +417,7 @@ nav ul li:nth-child(5) {
     top: 1550.76px;
     left: 48px;
     z-index: 15;
+    padding-bottom: 20px;
 }
 
 .personaje_5 {
@@ -475,8 +476,7 @@ nav ul li:nth-child(5) {
     display: flex;
     justify-content: center;
     gap: 36px;
-    margin-top: 60px;
-    background-color: pink;
+    margin-top: 80px;
 }
 
 .frame:nth-child(1).float-animation {
@@ -522,8 +522,21 @@ nav ul li:nth-child(5) {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     position: relative;
+    margin-bottom: 30px;
     opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-out; /* Animación suave */
 }
+
+.frame.visible {
+    opacity: 1; /* Aparece */
+  transform: translateY(0); /* Vuelve a su posición original */
+  }
+
+  .frame .hidden{
+    opacity: 0;
+    transform: translateY(30px); /* Desplazado nuevamente hacia abajo */
+  }
 
 .frame p {
     margin-top: 20px;
