@@ -716,7 +716,7 @@ nav ul li:nth-child(5) {
     cursor: pointer;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    transition: all 0.3s ease-in-out; /* Suaviza los cambios */
+    transition: all 0.3s ease-in-out;
 }
 
 .descargar_btn img {
@@ -758,21 +758,25 @@ nav ul li:nth-child(5) {
 }
 
 /*---------------------- SECTION 4 ------------------*/
-
-
-
-
-
 .scroll-contenedor-textos {
     display: flex;
     flex-direction: column;
+    gap: 100px;
 }
 
 .scroll-contenedor-textos div {
-    margin-right: 100px;
+    /* margin-right: 100px;
     width: 467px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400; */
+    /* arribano */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    font-family: Lato;
+    text-align: left;
+    height: 500px;
 }
 
 .section4 h1 {
@@ -782,6 +786,15 @@ nav ul li:nth-child(5) {
     width: 802px;
     height: 57px;
     margin-left: 100px;
+    font-family: Lato;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.scroll-de-personajes {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
 }
 
 .section4 .scroll-de-personajes {
@@ -793,40 +806,64 @@ nav ul li:nth-child(5) {
     gap: 120px;
     padding-top: 100px;
 }
-.scroll-imagenes{
+
+.scroll-imagenes {
     display: flex;
     flex-direction: column;
-    gap: 120px;
     width: 50%;
     position: relative;
 }
 
-.amigos-diversion-image{
+.amigos-diversion-image {
     width: 400px;
-    height: 414px;
-    position: absolute;
-    top: 15px;
-    left: calc(50% - 250px);
+    height: 500px;
+    margin-bottom: 110px;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s ease-out;
     transform: translateX(-200%);
-    transition: transform .5s;
 }
 
 .amigos-diversion-image:nth-child(1) {
     transform: unset;
 }
 
-.scroll-imagenes img.active {
+.amigos-diversion-image.active {
+    animation: bounceIn 0.6s ease-out; 
     opacity: 1;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(10%) scale(1.06);
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(-5%) scale(0.97);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
 }
 
 .scroll-contenedor-textos h2 {
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 15px;
-    margin-top:267px;
+    line-height: 37.8px;
+    width: 550px;
+    height: 38px;
 }
 
-
+.scroll-contenedor-textos div div {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18.9px;
+    height: 114px;
+    width: 467px;
+}
 
 
 /*---------------------- SECTION 5  VIDEO------------------*/
@@ -1259,8 +1296,6 @@ footer div {
     top: 90px;
     left:800px
 }
-
-
 
 .character {
     animation: number_spritsheet 3s steps(56) infinite;

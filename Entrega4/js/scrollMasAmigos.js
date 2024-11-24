@@ -1,44 +1,23 @@
-// Lista de imágenes para cada sección
-const images = [
-    "img/section4/0.svg", // Sumas Mágicas
-    "img/section4/1.svg", // Rompecabezas de Restas
-    "img/section4/2.svg", // Carrera de Conteo
-    "img/section4/3.svg", // Encuentra el Número Oculto
-    "img/section4/4.svg", // Desafío de Comparación
-    "img/section4/5.svg", // Forma el Número Correcto
-    "img/section4/6.svg", // Encuentra el Número Oculto
-    "img/section4/7.svg", // Salto de Sumas
-    "img/section4/8.svg", // Rompecabezas de Secuencias
-    "img/section4/9.svg", // El Desafío del Doble
-    "img/section4/10.svg", // Aventura de Divisiones
-    "img/section4/11.svg"  // Suma de Amigos
-];
+document.addEventListener("scroll", () => {
+    const y = window.scrollY;
 
-const stickyImage = document.querySelector('.scroll-imagenes');
-const textSections = document.querySelectorAll(".scroll-contenedor-textos div");
+    if (y >= 4103 && y < 10144) {
+        let n = Math.floor((y - 3783) / 600);
 
-// Función para manejar el cambio de imagen
-const handleScroll = () => {
-    let currentIndex = 0;
+        let images = document.querySelectorAll('.amigos-diversion-image');
 
-    // Verificar qué sección está en el viewport
-    textSections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
-            currentIndex = index;
+        for (let index = 0; index < images.length; index++) {
+            if (index !== n) {
+                // Ocultar imágenes fuera del índice actual
+                images[index].classList.remove('active');
+                images[index].style.transform = "translateX(-200%)";
+            } else {
+                // Mostrar la imagen activa con animación de rebote
+                images[index].classList.add('active');
+                images[index].style.transform = "unset";
+                images[index].style.top = y - 4150 + "px";
+            }
         }
-    });
-
-    // Cambiar imagen si es necesario
-    if (images[currentIndex] && stickyImage.src !== images[currentIndex]) {
-        stickyImage.style.opacity = 0; // Transición de salida
-        setTimeout(() => {
-            stickyImage.src = images[currentIndex];
-            stickyImage.style.transform = "scale(1.1)"; // Zoom suave
-            stickyImage.style.opacity = 1; // Transición de entrada
-        }, 500);
     }
-};
 
-// Escuchar evento de scroll
-window.addEventListener("scroll", handleScroll);
+});
